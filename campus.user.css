@@ -1,0 +1,137 @@
+/* ==UserStyle==
+@name         KIT Campus Dark
+@description  Dark Theme for KIT Campus
+@namespace    com.faendir
+@version      1.0.0
+@author       f43nd1r <support@faendir.com> (https://github.com/f43nd1r)
+@homepageURL  https://github.com/F43nd1r/kit-dark/
+@supportURL   https://github.com/F43nd1r/kit-dark/issues
+@license      Apache License 2.0 
+@preprocessor stylus
+
+@var          color    fontColor  "Font color"    #ffffff
+==/UserStyle== */
+
+@-moz-document domain("campus.studium.kit.edu") {
+:root {
+    --background: #222222;
+    --level-1: #333333;
+    --level-2: #444444;
+    --level-3: #555555;
+    --highlight: #777777;
+    --text: fontColor;
+    --border: white;
+}
+
+body,
+div,
+h1,
+h2,
+span,
+.login-link,
+#metanavigation > a,
+.level_1_not_selected,
+.level_1_selected,
+.item_not_selected,
+.item_selected,
+#search-bar form > label,
+#search-bar input,
+#search-bar select {
+    color: var(--text) !important;
+}
+
+body,
+.grid-tile {
+    background: none !important;
+}
+
+body {
+    background-color: var(--background) !important;
+}
+
+#middle-row,
+.level_1_not_selected,
+#search-bar > div,
+.infobox,
+#cmsinfo {
+    background-color: var(--level-1) !important;
+}
+
+.level_1_selected,
+#search-bar input,
+#search-bar select,
+.ui-autocomplete,
+.grid-tile {
+    background-color: var(--level-2) !important;
+}
+
+.item_not_selected,
+#search-bar form > label,
+.grid-tile > h2 > a {
+    background-color: var(--level-3) !important;
+}
+
+.item_not_selected:hover,
+.item_selected,
+#search-bar form > label:hover,
+.ui-state-active {
+    background-color: var(--highlight) !important;
+}
+
+#container,
+#footer-content,
+#head,
+.level_1_not_selected,
+.level_1_selected,
+ul,
+#search-bar form {
+    border: none !important;
+}
+
+.li_level_1_selected_children > ul {
+    padding: 0 !important;
+}
+
+.ui-autocomplete-input {
+    background-image: none !important;
+}
+
+img {
+    filter: invert(1)
+}
+}
+
+@-moz-document domain("campus.kit.edu") {
+:root {
+    --background: #222222;
+    --level-1: #333333;
+    --level-2: #444444;
+    --level-3: #555555;
+    --highlight: #777777;
+    --text: white;
+    --border: white;
+}
+
+
+
+body, .tabbar .tab, .pagination {
+    color: var(--text) !important;
+}
+
+.tabbar {
+    background: none !important;
+}
+
+.groupBox, .tabbar .tab {
+    background-color: var(--level-2) !important;
+}
+
+.tabbar .tab-active, .tablecaption, .pagination {
+    background-color: var(--level-3) !important;
+}
+
+
+.groupBox {
+    border: none !important;
+}
+} 
