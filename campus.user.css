@@ -11,127 +11,201 @@
 
 @var          color    fontColor  "Font color"    #ffffff
 ==/UserStyle== */
-
 @-moz-document domain("campus.studium.kit.edu") {
-:root {
-    --background: #222222;
-    --level-1: #333333;
-    --level-2: #444444;
-    --level-3: #555555;
-    --highlight: #777777;
-    --text: fontColor;
-    --border: white;
-}
+    :root {
+        --background: #222222;
+        --level-1: #333333;
+        --level-2: #444444;
+        --level-3: #555555;
+        --highlight: #777777;
+        --text: fontColor;
+        --border: white;
+    }
 
-body,
-div,
-h1,
-h2,
-span,
-.login-link,
-#metanavigation > a,
-.level_1_not_selected,
-.level_1_selected,
-.item_not_selected,
-.item_selected,
-#search-bar form > label,
-#search-bar input,
-#search-bar select {
-    color: var(--text) !important;
-}
+    body,
+    div,
+    h1,
+    h2,
+    span,
+    .login-link,
+    #metanavigation > a,
+    .level_1_not_selected,
+    .level_1_selected,
+    .item_not_selected,
+    .item_selected,
+    #search-bar form > label,
+    #search-bar input,
+    #search-bar select {
+        color: var(--text) !important;
+    }
 
-body,
-.grid-tile {
-    background: none !important;
-}
+    body,
+    .grid-tile {
+        background: none !important;
+    }
 
-body {
-    background-color: var(--background) !important;
-}
+    body {
+        background-color: var(--background) !important;
+    }
 
-#middle-row,
-.level_1_not_selected,
-#search-bar > div,
-.infobox,
-#cmsinfo {
-    background-color: var(--level-1) !important;
-}
+    #middle-row,
+    .level_1_not_selected,
+    #search-bar > div,
+    .infobox,
+    #cmsinfo {
+        background-color: var(--level-1) !important;
+    }
 
-.level_1_selected,
-#search-bar input,
-#search-bar select,
-.ui-autocomplete,
-.grid-tile {
-    background-color: var(--level-2) !important;
-}
+    .level_1_selected,
+    #search-bar input,
+    #search-bar select,
+    .ui-autocomplete,
+    .grid-tile {
+        background-color: var(--level-2) !important;
+    }
 
-.item_not_selected,
-#search-bar form > label,
-.grid-tile > h2 > a {
-    background-color: var(--level-3) !important;
-}
+    .item_not_selected,
+    #search-bar form > label,
+    .grid-tile > h2 > a {
+        background-color: var(--level-3) !important;
+    }
 
-.item_not_selected:hover,
-.item_selected,
-#search-bar form > label:hover,
-.ui-state-active {
-    background-color: var(--highlight) !important;
-}
+    .item_not_selected:hover,
+    .item_selected,
+    #search-bar form > label:hover,
+    .ui-state-active,
+    #wait-message {
+        background-color: var(--highlight) !important;
+    }
 
-#container,
-#footer-content,
-#head,
-.level_1_not_selected,
-.level_1_selected,
-ul,
-#search-bar form {
-    border: none !important;
-}
+    #container,
+    #footer-content,
+    #head,
+    .level_1_not_selected,
+    .level_1_selected,
+    ul,
+    #search-bar form {
+        border: none !important;
+    }
 
-.li_level_1_selected_children > ul {
-    padding: 0 !important;
-}
+    .li_level_1_selected_children > ul {
+        padding: 0 !important;
+    }
 
-.ui-autocomplete-input {
-    background-image: none !important;
-}
+    .ui-autocomplete-input {
+        background-image: none !important;
+    }
 
-img {
-    filter: invert(1)
-}
+    img {
+        filter: invert(1);
+    }
+    #wait-overlay {
+        opacity: .2 !important;
+    }
 }
 
 @-moz-document domain("campus.kit.edu") {
-:root {
-    --background: #222222;
-    --level-1: #333333;
-    --level-2: #444444;
-    --level-3: #555555;
-    --highlight: #777777;
-    --text: white;
-    --border: white;
+    :root {
+        --background: #222222;
+        --level-1: #333333;
+        --level-2: #444444;
+        --level-3: #555555;
+        --level-4: #666666;
+        --level-5: #777777;
+        --level-6: #888888;
+        --level-7: #999999;
+        --highlight: #AAAAAA;
+        --text: white;
+        --border: white;
+    }
+
+
+
+    body,
+    .tabbar .tab,
+    .pagination,
+    th,
+    td,
+    td * {
+        color: var(--text) !important;
+    }
+
+    .tabbar {
+        background: none !important;
+    }
+
+    .groupBox,
+    .tabbar .tab,
+    .tablehead th,
+    .message {
+        background-color: var(--level-2) !important;
+    }
+
+    .tabbar .tab-active,
+    .tablecaption,
+    .pagination,
+    .hierarchy1 td,
+    tbody tr {
+        background-color: var(--level-3) !important;
+    }
+
+    .hierarchy2 td {
+        background-color: var(--level-4) !important;
+    }
+
+    .hierarchy3 td {
+        background-color: var(--level-5) !important;
+    }
+
+    .hierarchy4 td,
+    .hierarchy tr.hover td {
+        background-color: var(--level-6) !important;
+    }
+
+    .hierarchy5 td {
+        background-color: var(--level-7) !important;
+    }
+
+    .hierarchy tr:hover td,
+    tbody tr:hover td {
+        background-color: var(--highlight) !important;
+    }
+
+    .groupBox,
+    td {
+        border: none !important;
+    }
+
+    .message {
+        box-shadow: none !important;
+    }
 }
+@-moz-document domain("qis.studium.kit.edu") {
+    :root {
+        --background: #222222;
+        --level-1: #333333;
+        --level-2: #444444;
+        --level-3: #555555;
+        --level-4: #666666;
+        --level-5: #777777;
+        --level-6: #888888;
+        --level-7: #999999;
+        --highlight: #AAAAAA;
+        --text: white;
+        --border: white;
+    }
 
+    body,
+    h1,
+    td {
+        color: var(--text) !important;
+    }
 
+    td.mod_n_odd {
+        background-color: var(--level-2) !important;
+    }
 
-body, .tabbar .tab, .pagination {
-    color: var(--text) !important;
+    td.mod_n_even {
+        background-color: var(--level-3) !important;
+    }
 }
-
-.tabbar {
-    background: none !important;
-}
-
-.groupBox, .tabbar .tab {
-    background-color: var(--level-2) !important;
-}
-
-.tabbar .tab-active, .tablecaption, .pagination {
-    background-color: var(--level-3) !important;
-}
-
-
-.groupBox {
-    border: none !important;
-}
-} 
