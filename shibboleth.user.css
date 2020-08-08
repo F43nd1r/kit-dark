@@ -13,56 +13,45 @@
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://idp.scc.kit.edu/idp/profile/SAML2/Redirect/SSO") {
-:root {
-    --background: #222222;
-    --level-1: #333333;
-    --level-2: #444444;
-    --level-3: #555555;
-    --highlight: #777777;
-    --text: fontColor;
-    --border: white;
-}
-body {
-    background: var(--background) !important;
-    color: var(--text);
-}
-div#wrapper {
-    background: var(--level-1) !important;
-}
-div#head {
-    background: var(--level-1) !important;
-}
-div#logo {
-    background-color: var(--level-1) !important;
-}
-div.spacer {
-    background-color: var(--level-1) !important;
-    border: none !important;
-}
-h1 {
-    color: var(--text) !important;
-}
-div.text {
-    color: var(--text);
-}
-input {
-    background-color: var(--level-2) !important;
-    color: var(--text);
-}
-button {
-    background-color: var(--level-2) !important;
-    color: var(--text);
-}
-button:hover {
-    background-color: var(--level-3) !important;
-}
-div#container {
-    border: none !important;
-}
-div#footer-container {
-    background: var(--level-1) !important;
-}
-div#footer-content {
-    border: none !important;
-}
+    :root {
+        --background: #222222;
+        --level-1: #333333;
+        --level-2: #444444;
+        --level-3: #555555;
+        --highlight: #777777;
+        --text: fontColor;
+    }
+    body {
+        background-color: var(--background) !important;
+    }
+    div#wrapper,
+    div#head,
+    .page-header,
+    div#logo,
+    div.spacer,
+    div#footer-container,
+    .page-footer {
+        background-color: var(--level-1) !important;
+    }
+    input,
+    button {
+        background-color: var(--level-2) !important;
+    }
+    button:hover {
+        background-color: var(--level-3) !important;
+    }
+    div.spacer,
+    div#container,
+    div#footer-content,
+    .page-footer {
+        border: none !important;
+    }
+    h1,
+    .navigation a,
+    div.text,
+    input,
+    body,
+    button {
+        color: var(--text) !important;
+    }
 }
