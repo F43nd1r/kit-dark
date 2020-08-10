@@ -205,7 +205,8 @@
         background-color: var(--level-2) !important;
     }
 
-    td.mod_n_even {
+    td.mod_n_even,
+    #inhalt3 {
         background-color: var(--level-3) !important;
     }
 }
