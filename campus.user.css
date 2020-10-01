@@ -137,7 +137,8 @@
     .groupBox,
     .tabbar .tab,
     .tablehead th,
-    .message {
+    .message,
+    div.content > :last-child {
         background-color: var(--level-2) !important;
     }
 
@@ -154,7 +155,9 @@
         background-color: var(--level-4) !important;
     }
 
-    .hierarchy3 td {
+    .hierarchy3 td,
+    .hierarchy tr.current td
+    {
         background-color: var(--level-5) !important;
     }
 
