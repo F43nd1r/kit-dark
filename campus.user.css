@@ -198,11 +198,14 @@
 
     body,
     h1,
-    td {
+    td,
+    legend {
         color: var(--text) !important;
     }
 
-    td.mod_n_odd {
+    td.mod_n_odd,
+    fieldset,
+    .mikronavi_list {
         background-color: var(--level-2) !important;
     }
 
