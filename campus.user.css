@@ -35,7 +35,8 @@
     .item_selected,
     #search-bar form > label,
     #search-bar input,
-    #search-bar select {
+    #search-bar select,
+    .tab {
         color: var(--text) !important;
     }
 
@@ -52,7 +53,10 @@
     .level_1_not_selected,
     #search-bar > div,
     .infobox,
-    #cmsinfo {
+    #cmsinfo,
+    .tab-wrapper,
+    .tab,
+    .tablecaption {
         background-color: var(--level-1) !important;
     }
 
@@ -60,13 +64,17 @@
     #search-bar input,
     #search-bar select,
     .ui-autocomplete,
-    .grid-tile {
+    .grid-tile,
+    .tab-active,
+    .tablehead th,
+    .emptylist {
         background-color: var(--level-2) !important;
     }
 
     .item_not_selected,
     #search-bar form > label,
-    .grid-tile > h2 > a {
+    .grid-tile > h2 > a,
+    .tablecontent td {
         background-color: var(--level-3) !important;
     }
 
@@ -156,8 +164,7 @@
     }
 
     .hierarchy3 td,
-    .hierarchy tr.current td
-    {
+    .hierarchy tr.current td {
         background-color: var(--level-5) !important;
     }
 
