@@ -36,7 +36,8 @@
     #search-bar form > label,
     #search-bar input,
     #search-bar select,
-    .tab {
+    .tab,
+    td {
         color: var(--text) !important;
     }
 
