@@ -69,7 +69,7 @@
     .tab-active,
     .tablehead th,
     .emptylist,
-    td.mod_n_odd {
+    .mod td.mod_n_odd {
         background-color: var(--level-2) !important;
     }
 
@@ -77,7 +77,7 @@
     #search-bar form > label,
     .grid-tile > h2 > a,
     .tablecontent td,
-    td.mod_n_even {
+    .mod td.mod_n_even {
         background-color: var(--level-3) !important;
     }
 
