@@ -68,14 +68,16 @@
     .grid-tile,
     .tab-active,
     .tablehead th,
-    .emptylist {
+    .emptylist,
+    td.mod_n_odd {
         background-color: var(--level-2) !important;
     }
 
     .item_not_selected,
     #search-bar form > label,
     .grid-tile > h2 > a,
-    .tablecontent td {
+    .tablecontent td,
+    td.mod_n_even {
         background-color: var(--level-3) !important;
     }
 
